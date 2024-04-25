@@ -1,0 +1,55 @@
+.body {
+    background: url(../../assets/destination/background-destination-desktop.jpg);
+    margin: 0;
+    width: 100%;
+    min-height: 100vh !important;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid white; */
+    /* min-height: 100%; */
+    padding-top: 160px;
+  }
+  .header{
+    font-size: 1.7rem;
+    color: white;
+    font-family: 'core';
+    width: 40%;
+    margin-bottom: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .header span span{
+    font-weight: 800;
+    color: grey;
+    margin-right: 1.2rem;
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .body {
+      background-image: url(../../assets/destination/background-destination-tablet.jpg);
+      min-height: 100vh;
+    }
+    .header{
+      width: 100%;
+      justify-content: start;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .body {
+      background-image: url(../../assets/destination/background-destination-mobile.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .header{
+      width: 100%;
+      gap: 10px;
+      justify-content: start;
+      font-size: 1.3rem;
+    }
+    
+  
+  }
+  

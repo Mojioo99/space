@@ -1,0 +1,17 @@
+body{
+  
+
+  min-height: 100vh !important;
+}
+*{
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'bellfair';
+  src: url(../assets/fonts/bellefair/Bellefair-Regular.ttf);
+}
+@font-face {
+  font-family: 'core';
+  src: url(../assets/fonts/Core/Core/Fontspring-coresansar15.otf);
+}
+

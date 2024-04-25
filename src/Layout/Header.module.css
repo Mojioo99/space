@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 5%;
+  background-color: transparent;
+  position: absolute;
+}
+img {
+  width: 2.5rem;
+  
+
+}
+.active{
+    border-bottom: 2px solid white;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  list-style: none;
+  justify-content: space-evenly;
+  color: white;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.036);
+  width: 65%;
+  height: 80px;
+  z-index: 0;
+  padding-right: 100px;
+  padding-left: 50px;
+  font-family: "core";
+  transition: 0.5s;
+}
+.line {
+  width: 30%;
+  translate: 10%;
+  z-index: 1 !important;
+  border-width: 1px 0 0 0;
+  opacity: 0.3;
+}
+li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.24);
+}
+li:focus {
+  border-bottom: 3px solid;
+}
+li {
+  height: 100%;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+  
+  
+}
+li span{
+    font-weight: 800;
+}
+a{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+}
+.menu li:first-child a{
+  border-bottom: 2px solid white;
+}
+.hamburger{
+    margin: 20px;
+    z-index: 100 !important;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+.mobileContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  display: none;
+  z-index: 0  !important;
+}
+.mobileContainer .menu{
+    scale: 0 1;
+}
+@media screen and (max-width: 480px) {
+  .mobileContainer {
+    display: block;
+  }
+  .menu {
+    scale: 0 1;
+    transform-origin: right;
+    position: fixed;
+    right: 0;
+    top: -15px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 70%;
+    gap: 20px;
+    height: 100vh;
+    padding-block: 50px;
+    z-index: 0 !important;
+  }
+  li {
+    height: 40px;
+  }
+  li {
+    text-decoration: none !important;
+
+  }
+  .container ul {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .hamburger,img{
+    margin-top: 5%;
+    display: block;
+  }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    li span{
+        display: none !important;
+    }
+    hr{
+        opacity: 0 !important;
+    }
+}
