@@ -1,5 +1,7 @@
 .body {
   background: url(../../assets/home/background-home-desktop.jpg);
+  background-position: center;
+    background-size: cover;
   margin: 0;
   width: 100%;
   min-height: 100vh;

@@ -1,5 +1,7 @@
 .body {
     background: url(../../assets/destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-size: cover;
     margin: 0;
     width: 100%;
     min-height: 100vh !important;

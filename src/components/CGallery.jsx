@@ -33,7 +33,7 @@ function CGallery() {
     <div className={classes.container}>
         <div className={classes.col}>
         <img src={crew[currentTab]?.image} alt="" />
-        <hr />
+        
       </div>
       <div className={classes.col}>
         <h3>{crew[currentTab]?.role.toUpperCase()}</h3>
